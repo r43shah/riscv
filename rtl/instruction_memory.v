@@ -14,10 +14,13 @@ module instruction_memory(
             instruction <= {inst_array[read_address+3], inst_array[read_address+2], 
                             inst_array[read_address+1], inst_array[read_address]};
         end
+        else begin
+            instruction <= 32'bz;
+        end
     end
 
 initial begin
-    $dumpfile("../vcd/output.vcd");
+    $dumpfile("../vcd/instruction_memory.vcd");
     $dumpvars(0,instruction_memory);
 end
 
