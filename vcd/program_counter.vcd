@@ -1,0 +1,59 @@
+$date
+	Fri Aug  2 23:45:53 2024
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module program_counter $end
+$var wire 1 ! clk $end
+$var wire 32 " pc [31:0] $end
+$var reg 32 # pc_out [31:0] $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+b100 #
+b0 "
+1!
+$end
+#500
+0!
+#1000
+b1 "
+1!
+#1500
+0!
+#2000
+b101 #
+1!
+#2500
+0!
+#3000
+b10 "
+1!
+#3500
+0!
+#4000
+b110 #
+1!
+#4500
+0!
+#5000
+b11 "
+1!
+#5500
+0!
+#6000
+b111 #
+1!
+#6500
+0!
+#7000
+1!
+#7001

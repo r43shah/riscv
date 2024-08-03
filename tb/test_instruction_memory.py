@@ -122,3 +122,5 @@ async def inst_when_read_enable_toggles(dut):
     await RisingEdge(dut.clk)
 
     logging.info('Completed test scenario')
+
+logging.info('End: Instruction Memory Tests')
