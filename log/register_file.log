@@ -1,0 +1,26 @@
+INFO:root:Start: Register File Tests
+INFO:root:End: Register File Tests
+INFO:cocotb.regression:Found test test_register_file.reg_file_read
+INFO:cocotb.regression:Found test test_register_file.reg_file_write
+INFO:cocotb.regression:[34mrunning[49m[39m reg_file_read (1/2)
+INFO:root:Test Scenario: Does read operation work?
+INFO:root:Setting up clock
+INFO:root:register_file_model: [1129905367, 77082840, 2967685046, 571616328, 1761791406, 2217771905, 3022453724, 475893067, 2322596693, 2448358011, 1694934120, 626149495, 1344823414, 1030958437, 1129644198, 2414242058, 2591614112, 3917970229, 1520152994, 758749575, 2761650326, 83907964, 3480292796, 3836815578, 2093668113, 457643666, 1178400243, 2922997569, 1934054188, 2492206791, 607938642, 1841572675]
+INFO:root:Starting checks
+INFO:root:Completed test scenario
+INFO:cocotb.regression:reg_file_read [32mpassed[49m[39m
+INFO:cocotb.regression:[34mrunning[49m[39m reg_file_write (2/2)
+INFO:root:Test Scenario: Do write operations work?
+INFO:root:Setting up clock
+INFO:root:Starting checks
+INFO:root:Test scenario complete
+INFO:cocotb.regression:reg_file_write [32mpassed[49m[39m
+INFO:cocotb.regression:*******************************************************************************************
+** TEST                               STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+*******************************************************************************************
+** test_register_file.reg_file_read   [32m PASS [49m[39m         16.00           0.24         67.50  **
+** test_register_file.reg_file_write  [32m PASS [49m[39m         64.00           0.72         88.72  **
+*******************************************************************************************
+** TESTS=2 PASS=2 FAIL=0 SKIP=0                      80.00           1.21         66.19  **
+*******************************************************************************************
+
