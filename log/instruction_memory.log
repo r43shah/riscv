@@ -1,4 +1,5 @@
 INFO:root:Start: Instruction Memory Tests
+INFO:root:End: Instruction Memory Tests
 INFO:cocotb.regression:Found test test_instruction_memory.inst_when_read_enable
 INFO:cocotb.regression:Found test test_instruction_memory.inst_when_read_disable
 INFO:cocotb.regression:Found test test_instruction_memory.inst_when_read_enable_toggles
@@ -6,32 +7,32 @@ INFO:cocotb.regression:[34mrunning[49m[39m inst_when_read_enable (1/3)
 INFO:root:Test Scenario: How does module behave when read is always enabled
 INFO:root:Setting up clock
 INFO:root:Printing instruction model
-INFO:root:['00111000', '11101010', '01101010', '11010100', '11000000', '11101101', '01001101', '01101100', '10011001', '10110111', '11110100', '10010111', '11100111', '11011111', '11101000', '10001110']
+INFO:root:['10110010', '00011001', '10011100', '01010100', '11100111', '10001111', '10001111', '01000111', '10011100', '10001100', '11111000', '00001110', '11111011', '10110001', '10111111', '00100110']
 INFO:root:read_enable is set HIGH: 1
-INFO:root:dut.inst_array: ['10001110', '11101000', '11011111', '11100111', '10010111', '11110100', '10110111', '10011001', '01101100', '01001101', '11101101', '11000000', '11010100', '01101010', '11101010', '00111000']
+INFO:root:dut.inst_array: ['00100110', '10111111', '10110001', '11111011', '00001110', '11111000', '10001100', '10011100', '01000111', '10001111', '10001111', '11100111', '01010100', '10011100', '00011001', '10110010']
 INFO:root:Starting comparison
 DEBUG:root:0
 DEBUG:root:read_address: 00000000000000000000000000000000
 DEBUG:root:dut.instruction.value: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-DEBUG:root:instruction_model: 11010100011010101110101000111000
+DEBUG:root:instruction_model: 01010100100111000001100110110010
 DEBUG:root:1
 DEBUG:root:read_address: 00000000000000000000000000000100
-DEBUG:root:dut.instruction.value: 11010100011010101110101000111000
-DEBUG:root:instruction_model: 01101100010011011110110111000000
+DEBUG:root:dut.instruction.value: 01010100100111000001100110110010
+DEBUG:root:instruction_model: 01000111100011111000111111100111
 DEBUG:root:2
 DEBUG:root:read_address: 00000000000000000000000000001000
-DEBUG:root:dut.instruction.value: 01101100010011011110110111000000
-DEBUG:root:instruction_model: 10010111111101001011011110011001
+DEBUG:root:dut.instruction.value: 01000111100011111000111111100111
+DEBUG:root:instruction_model: 00001110111110001000110010011100
 DEBUG:root:3
 DEBUG:root:read_address: 00000000000000000000000000001100
-DEBUG:root:dut.instruction.value: 10010111111101001011011110011001
-DEBUG:root:instruction_model: 10001110111010001101111111100111
+DEBUG:root:dut.instruction.value: 00001110111110001000110010011100
+DEBUG:root:instruction_model: 00100110101111111011000111111011
 INFO:root:Completed test scenario
 INFO:cocotb.regression:inst_when_read_enable [32mpassed[49m[39m
 INFO:cocotb.regression:[34mrunning[49m[39m inst_when_read_disable (2/3)
 INFO:root:Test Scenario: How does module behave when read is disabled
 INFO:root:Printing instruction model
-INFO:root:['01010001', '00100100', '01010010', '00111101', '00010111', '11100110', '01100111', '11000010', '11001111', '10000010', '10000000', '11110011', '00111001', '01001100', '00101100', '01100100']
+INFO:root:['10111001', '00000101', '11001110', '00001100', '10101111', '01011100', '01100100', '01001100', '10011000', '00001001', '01000010', '11011110', '10000101', '11010000', '01010001', '10011001']
 INFO:root:Starting comparison
 INFO:root:Completed test scenario
 INFO:cocotb.regression:inst_when_read_disable [32mpassed[49m[39m
@@ -39,7 +40,7 @@ INFO:cocotb.regression:[34mrunning[49m[39m inst_when_read_enable_toggles (3/3
 INFO:root:Test Scenario: How does module behave when we toggle read_enable
 INFO:root:Setting up clock
 INFO:root:Printing instruction model
-INFO:root:['11110111', '10001000', '10110000', '00010101', '00110011', '11111101', '01111011', '10000110', '11101011', '01101111', '10110101', '00011101', '10000010', '00001011', '10110011', '01101100']
+INFO:root:['00111011', '11100111', '01010100', '11001001', '01101111', '01110101', '01101000', '00011000', '00101101', '11110111', '10110010', '10100111', '11011001', '10101010', '10110000', '01111100']
 INFO:root:dut.read_enable.value: 0
 DEBUG:root:dut.instruction_value: zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
 DEBUG:root:dut.instruction_value: zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz
@@ -49,10 +50,10 @@ INFO:cocotb.regression:inst_when_read_enable_toggles [32mpassed[49m[39m
 INFO:cocotb.regression:***************************************************************************************************************
 ** TEST                                                   STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
 ***************************************************************************************************************
-** test_instruction_memory.inst_when_read_enable          [32m PASS [49m[39m          9.00           0.08        118.36  **
-** test_instruction_memory.inst_when_read_disable         [32m PASS [49m[39m          6.00           0.00       5226.33  **
-** test_instruction_memory.inst_when_read_enable_toggles  [32m PASS [49m[39m         12.00           0.02        493.12  **
+** test_instruction_memory.inst_when_read_enable          [32m PASS [49m[39m          9.00           0.00       8860.11  **
+** test_instruction_memory.inst_when_read_disable         [32m PASS [49m[39m          6.00           0.00      17762.89  **
+** test_instruction_memory.inst_when_read_enable_toggles  [32m PASS [49m[39m         12.00           0.00      23260.56  **
 ***************************************************************************************************************
-** TESTS=3 PASS=3 FAIL=0 SKIP=0                                          27.00           0.35         78.01  **
+** TESTS=3 PASS=3 FAIL=0 SKIP=0                                          27.00           0.00       6747.22  **
 ***************************************************************************************************************
 

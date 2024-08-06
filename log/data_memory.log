@@ -1,0 +1,64 @@
+INFO:root:Start: Data Memory Tests
+INFO:root:End: Data Memory Tests
+INFO:cocotb.regression:Found test test_data_memory.reg_file_read_write
+INFO:cocotb.regression:[34mrunning[49m[39m reg_file_read_write (1/1)
+INFO:root:Test Scenario: Do read and write operations work
+INFO:root:Setting up clock
+INFO:root:Initializing memory data
+INFO:root:Memory data model has been generated
+INFO:root:Starting checks
+DEBUG:root:0
+DEBUG:root:dut.data_read.value: 10110010001110010000001011011011
+DEBUG:root:original_data: 10110010001110010000001011011011
+DEBUG:root:1
+DEBUG:root:dut.data_read.value: 00101101100101111100011100010101
+DEBUG:root:data_write: 764921621
+DEBUG:root:2
+DEBUG:root:dut.data_read.value: 11001100010110111001000110101111
+DEBUG:root:original_data: 11001100010110111001000110101111
+DEBUG:root:3
+DEBUG:root:dut.data_read.value: 10010101111110101001001111110011
+DEBUG:root:original_data: 10010101111110101001001111110011
+DEBUG:root:4
+DEBUG:root:dut.data_read.value: 11110011000001111010101000000100
+DEBUG:root:original_data: 11110011000001111010101000000100
+DEBUG:root:5
+DEBUG:root:dut.data_read.value: 10010111010100010111011000101010
+DEBUG:root:data_write: 2538698282
+DEBUG:root:6
+DEBUG:root:dut.data_read.value: 01101100001110111111100000011100
+DEBUG:root:data_write: 1815869468
+DEBUG:root:7
+DEBUG:root:dut.data_read.value: 11000000000000100101110110000011
+DEBUG:root:original_data: 11000000000000100101110110000011
+DEBUG:root:8
+DEBUG:root:dut.data_read.value: 01111111110111110100111110111110
+DEBUG:root:data_write: 2145341374
+DEBUG:root:9
+DEBUG:root:dut.data_read.value: 01010100000100100011011111000100
+DEBUG:root:data_write: 1410480068
+DEBUG:root:10
+DEBUG:root:dut.data_read.value: 10111111000101110000111100101111
+DEBUG:root:data_write: 3205959471
+DEBUG:root:11
+DEBUG:root:dut.data_read.value: 11100001101110001001101111111011
+DEBUG:root:original_data: 11100001101110001001101111111011
+DEBUG:root:12
+DEBUG:root:dut.data_read.value: 11110111111110010111010110100000
+DEBUG:root:data_write: 4160320928
+DEBUG:root:13
+DEBUG:root:dut.data_read.value: 10101001110100000011011100000011
+DEBUG:root:original_data: 10101001110100000011011100000011
+DEBUG:root:14
+DEBUG:root:dut.data_read.value: 01000001010101101101010101010010
+DEBUG:root:original_data: 01000001010101101101010101010010
+INFO:root:Test scenario complete
+INFO:cocotb.regression:reg_file_read_write [32mpassed[49m[39m
+INFO:cocotb.regression:**********************************************************************************************
+** TEST                                  STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
+**********************************************************************************************
+** test_data_memory.reg_file_read_write  [32m PASS [49m[39m         37.00           0.01       3353.36  **
+**********************************************************************************************
+** TESTS=1 PASS=1 FAIL=0 SKIP=0                         37.00           0.01       3082.11  **
+**********************************************************************************************
+

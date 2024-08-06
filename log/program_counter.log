@@ -13,13 +13,21 @@ DEBUG:root:dut.pc.value: 00000000000000000000000000000010
 DEBUG:root:dut.pc_out.value: 00000000000000000000000000000110
 DEBUG:root:dut.pc.value: 00000000000000000000000000000011
 DEBUG:root:dut.pc_out.value: 00000000000000000000000000000111
+DEBUG:root:dut.pc.value: 00000000000000000000000000000100
+DEBUG:root:dut.pc_out.value: 00000000000000000000000000001000
+DEBUG:root:dut.pc.value: 00000000000000000000000000000101
+DEBUG:root:dut.pc_out.value: 00000000000000000000000000001001
+DEBUG:root:dut.pc.value: 00000000000000000000000000000110
+DEBUG:root:dut.pc_out.value: 00000000000000000000000000001010
+DEBUG:root:dut.pc.value: 00000000000000000000000000000111
+DEBUG:root:dut.pc_out.value: 00000000000000000000000000001011
 INFO:root:Test scenario complete
 INFO:cocotb.regression:pc_read [32mpassed[49m[39m
 INFO:cocotb.regression:**************************************************************************************
 ** TEST                          STATUS  SIM TIME (ns)  REAL TIME (s)  RATIO (ns/s) **
 **************************************************************************************
-** test_program_counter.pc_read  [32m PASS [49m[39m          7.00           0.00       9817.56  **
+** test_program_counter.pc_read  [32m PASS [49m[39m         15.00           0.00      15462.95  **
 **************************************************************************************
-** TESTS=1 PASS=1 FAIL=0 SKIP=0                  7.00           0.06        125.30  **
+** TESTS=1 PASS=1 FAIL=0 SKIP=0                 15.00           0.00       6760.37  **
 **************************************************************************************
 
