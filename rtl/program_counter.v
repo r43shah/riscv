@@ -1,16 +1,11 @@
 module program_counter(
     input clk,
-    input [31:0] pc,
+    input [31:0] pc_in,
     output reg [31:0] pc_out
 );
 
     always @(posedge clk) begin
-        pc_out <= pc + 4;
+        pc_out <= pc_in; //pc_in is output of PC source mux
     end
-
-initial begin
-    $dumpfile("../vcd/program_counter.vcd");
-    $dumpvars(0,program_counter);
-end
 
 endmodule
